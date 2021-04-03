@@ -14,6 +14,8 @@ pub mod spi_common;
 pub mod time;
 pub mod timer_params;
 pub mod timer_traits;
+#[cfg(feature = "unproven")]
+pub mod nvmctrl;
 
 #[cfg(all(feature = "unproven", feature = "dma"))]
 #[macro_use]
